@@ -1,0 +1,12 @@
+FUNCTION isPalindrome(word):
+VAR
+    word = STRING
+BEGIN
+    length = length of word
+    if length <= 1:
+        return true
+    else if word[0] != word[length - 1]:
+        return false
+    else:
+        return isPalindrome(word[1:length-1])
+END
